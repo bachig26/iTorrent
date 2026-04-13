@@ -2,9 +2,9 @@ name: "Debug Build"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ vlc-player ]
   pull_request:
-    branches: [ main ]
+    branches: [ vlc-player ]
 
 jobs:
   build_with_signing:
