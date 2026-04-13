@@ -5,6 +5,12 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'manual run'
+        required: false
+        default: 'Manual debug build'
 
 jobs:
   build_with_signing:
